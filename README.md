@@ -32,8 +32,6 @@ let sasUrl = "https://sample.blob.core.windows.net/shared?sp=racwdl&st=2025-02-1
 swift build
 ```
 
-4. The executable will be available at `.build/release/AzureBlobCLI`
-
 ## Usage
 
 Run the CLI tool:
