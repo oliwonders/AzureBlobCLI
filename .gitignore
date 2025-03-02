@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .DS_Store
 /.build
 /Packages
@@ -7,7 +6,6 @@ DerivedData/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
-=======
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -70,4 +68,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
->>>>>>> f9d9888b396eab8c6ef582aa7a4310b7602efa1a
