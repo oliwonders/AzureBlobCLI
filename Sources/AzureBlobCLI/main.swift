@@ -1,7 +1,7 @@
 import Foundation
 import AzureBlobLister
 
-let sasUrl = "https://oliverfiles.blob.core.windows.net/shared?sp=racwdl&st=2025-02-17T20:21:43Z&se=2026-01-02T04:21:43Z&spr=https&sv=2022-11-02&sr=c&sig=wItRZGQy3JZHUDI1hYtVBHld3LaLM%2Fb%2FuRW%2F0y8voyo%3D"
+let sasUrl = "https://samplefiles.blob.core.windows.net/myfiles?sp=racwdl&st=2025-02-17T20:21:43Z&se=2026-01-02T04:21:43Z&spr=https&sv=2022-11-02&sr=c&sig=xxxxxxxxxx"
 
 guard let urlComponents = URLComponents(string: sasUrl),
       let host = urlComponents.host,
