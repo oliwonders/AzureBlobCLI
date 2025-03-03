@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AzureStorageSwift",
+        "repositoryURL": "https://github.com/oliwonders/AzureStorageSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "aa3ba16106cca4165c779278bc813760ad0e754a",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
