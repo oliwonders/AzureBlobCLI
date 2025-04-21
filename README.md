@@ -21,7 +21,7 @@ git clone <repository-url>
 cd AzureBlobCLI
 ```
 
-2. Update the placeholder with your Azure storage SAS url 
+2. Update the placeholder in main.swift with your Azure storage SAS url 
 
 ```swift
 let sasUrl = "https://sample.blob.core.windows.net/shared?sp=racwdl&st=2025-02-17T20:21:43Z&se=2026-01-02T04:21:43Z&spr=https&sv=2022-11-02&sr=c&sig=xxx"
