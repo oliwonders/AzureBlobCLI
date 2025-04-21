@@ -1,6 +1,6 @@
 # Azure Blob CLI
 
-A simple command-line interface tool for listing blobs in an Azure Storage container using a SAS URL. Built with Swift and the AzureStorageSwift library.
+A simple command-line interface tool for listing blobs in an Azure Storage container using a SAS URL. It uses the [AzureStorageSwift](https://github.com/oliwonders/AzureStorageSwift) library for blob interaction.
 
 ## Features
 
