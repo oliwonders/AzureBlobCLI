@@ -14,7 +14,8 @@ public class AzureBlobLister {
             self.container = try AZSCloudBlobContainer(url: url)
         } catch {
             print(
-                "❌ Error initializing container: \(error.localizedDescription)")
+                "❌ Error initializing container: \(error.localizedDescription)"
+            )
             return nil
         }
     }
@@ -24,11 +25,14 @@ public class AzureBlobLister {
             completion(
                 nil,
                 NSError(
-                    domain: "AzureBlobLister", code: 400,
-                    userInfo: [NSLocalizedDescriptionKey: "Invalid container"]))
+                    domain: "AzureBlobLister",
+                    code: 400,
+                    userInfo: [NSLocalizedDescriptionKey: "Invalid container"]
+                )
+            )
             return
         }
-        
+
         container.listBlobsSegmented(
             with: nil,
             prefix: nil,
@@ -37,14 +41,14 @@ public class AzureBlobLister {
             maxResults: 50
         ) { (error, results) in
             if let error = error {
-                            print("❌ Error fetching blobs:")
-                                print("Error Domain: \(error._domain)")
-                                print("Error Code: \(error._code)")
-                                print("Error Details: \(error.localizedDescription)")
+                print("❌ Error fetching blobs:")
+                print("Error Domain: \(error._domain)")
+                print("Error Code: \(error._code)")
+                print("Error Details: \(error.localizedDescription)")
                 if let nsError = error as NSError? {
                     print("User Info: \(nsError.userInfo)")
                     completion(nil, error)
-                    
+
                 }
             } else {
                 let blobNames =
