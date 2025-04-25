@@ -5,7 +5,7 @@ let package = Package(
     name: "AzureBlobCLI",
     platforms: [.macOS(.v11)],
     dependencies: [
-        .package(url: "https://github.com/oliwonders/AzureStorageSwift.git", from: "1.0.1")
+        .package(url: "https://github.com/oliwonders/AzureStorageSwift.git", branch: "main")
     ],
     targets: [
         .executableTarget(
