@@ -20,7 +20,7 @@ public class AzureBlobLister {
         }
     }
 
-    public func listBlobs(completion: @escaping ([String]?, Error?) -> Void) {
+    public func listBlobs(completion: @escaping ([String]?, Error?) -> Void) async {
         guard let container = container else {
             completion(
                 nil,
@@ -33,7 +33,7 @@ public class AzureBlobLister {
             return
         }
 
-        container.listBlobsSegmented(
+        await container.listBlobsSegmented(
             with: nil,
             prefix: nil,
             useFlatBlobListing: true,

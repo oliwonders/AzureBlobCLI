@@ -17,7 +17,7 @@ print("\t Storage Account: \(host)")
 print("\t Container:       \(containerName)")
 
 if let blobLister = AzureBlobLister(sasUrl: sasUrl) {
-    blobLister.listBlobs { blobs, error in
+    await blobLister.listBlobs { blobs, error in
         if let error = error {
             print("❌ Failed to list blobs: \(error.localizedDescription)")
             exit(1)

@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "AzureBlobCLI",
-    platforms: [.macOS(.v11)],
+    platforms: [.macOS(.v13)],
     dependencies: [
         .package(url: "https://github.com/oliwonders/AzureStorageSwift.git", branch: "main")
     ],
